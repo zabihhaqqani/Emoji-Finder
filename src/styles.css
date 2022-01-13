@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter&family=Karla&family=Mulish&family=Nunito&family=Prompt&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary: #0870f1;
+}
+
+.App {
+  font-family: "Comfortaa", cursive;
+
+  text-align: center;
+  background-color: rgba(240, 228, 240, 0.534);
+}
+
+span {
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: inline;
+  min-height: 100vh;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 3px solid black;
+  margin: 1rem;
+}
+
+h2 {
+  background-color: var(--primary);
+  padding: 1rem 1rem;
+}
+.emojis {
+  padding: 0.5rem;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--primary);
+  padding: 1rem 1rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  width: vw;
+}
+
+.footer .link {
+  color: rgb(0, 0, 0);
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+/* links */
+
+.link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 600px) {
+  .footer ul {
+    padding-inline-start: 0px;
+  }
+}
+.flex-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  /* display: flex; */
+  flex-grow: 1;
+  flex-direction: column;
+  margin: 1rem;
+}
