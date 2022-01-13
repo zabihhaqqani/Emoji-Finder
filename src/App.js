@@ -17,7 +17,15 @@ let emojiDatabase = {
   "😖": "Confounded Face",
   "😣": "Persevering Face",
   "😞": "Disappointed Face",
-  "😓": "Downcast Face with Sweat"
+  "😓": "Downcast Face with Sweat",
+  "😧": "Anguished Face",
+  "😩": "Weary Face",
+  "😫": "Tired Face",
+  "😀": "Grinning Face",
+  "😄": "Grinning Face with Smiling Eyes",
+  "😁": "Beaming Face with Smiling Eyes",
+  "😆": "Grinning Squinting Face",
+  "😅": "Grinning Face with Sweat"
 };
 
 let emojisWeKnow = Object.keys(emojiDatabase);

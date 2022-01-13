@@ -12,9 +12,7 @@
 
 .App {
   font-family: "Comfortaa", cursive;
-
   text-align: center;
-  background-color: rgba(240, 228, 240, 0.534);
 }
 
 span {
@@ -28,8 +26,9 @@ span {
 input {
   padding: 1rem;
   border-radius: 1rem;
-  border: 3px solid black;
+  border: 2px solid black;
   margin: 1rem;
+  background-color: rgba(73, 78, 72, 0.068);
 }
 
 h2 {
@@ -47,7 +46,6 @@ h2 {
   padding: 1rem 1rem;
   text-align: center;
   color: rgb(0, 0, 0);
-  width: vw;
 }
 
 .footer .link {
