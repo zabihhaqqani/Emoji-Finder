@@ -59,7 +59,7 @@ export default function App() {
         <h2>Emoji Finder </h2>
         <main>
           <input placeholder="Paste your emoji here" onChange={inputHandler} />
-          <div>Click on the emojis to know them ⬇️</div>
+          <div>Click on the emojis to know them ⬇</div>
           <div id="output">{meaning}</div>
           {emojisWeKnow.map(function (emoji) {
             return (
@@ -77,7 +77,7 @@ export default function App() {
               <a
                 className="link social-handles"
                 href="https://github.com/zabihhaqqani"
-                target="_blank"
+                // target="_blank"
               >
                 GitHub
               </a>
@@ -86,7 +86,7 @@ export default function App() {
               <a
                 className="link social-handles"
                 href="https://www.linkedin.com/in/zabih-haqqani-7ab187191/"
-                target="_blank"
+                // target="_blank"
               >
                 LinkedIn
               </a>
@@ -95,7 +95,7 @@ export default function App() {
               <a
                 className="link social-handles"
                 href="https://twitter.com/zabih01"
-                target="_blank"
+                // target="_blank"
               >
                 Twitter
               </a>
