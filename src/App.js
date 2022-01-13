@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 
+//emoji database
 let emojiDatabase = {
   "😃": "Grinning Face with Big Eyes",
   "😂": "Face with Tears of Joy",
@@ -28,11 +29,14 @@ let emojiDatabase = {
   "😅": "Grinning Face with Sweat"
 };
 
+// objects to arrays
 let emojisWeKnow = Object.keys(emojiDatabase);
 
 export default function App() {
+  //setting the output
   let [meaning, setMeaning] = useState("");
 
+  //input handling
   function inputHandler(event) {
     let userInput = event.target.value;
 
@@ -44,18 +48,19 @@ export default function App() {
     setMeaning(meaning);
   }
 
+  //click handling
   function clickHandler(emoji) {
     let meaning = emojiDatabase[emoji];
     setMeaning(meaning);
   }
   return (
     <div className="App">
-      <div class="flex-wrap">
+      <div className="flex-wrap">
         <h2>Emoji Finder </h2>
         <main>
           <input placeholder="Paste your emoji here" onChange={inputHandler} />
-          <div className="emojis">Click on the emojis to know them ⬇️</div>
-          <div>{meaning}</div>
+          <div>Click on the emojis to know them ⬇️</div>
+          <div id="output">{meaning}</div>
           {emojisWeKnow.map(function (emoji) {
             return (
               <span onClick={() => clickHandler(emoji)} key={emoji}>
@@ -65,30 +70,30 @@ export default function App() {
             );
           })}
         </main>
-        <footer class="footer">
-          <div class="footer-header">SOCIAL MEDIA</div>
-          <ul class="link social-handles list-non-bullet">
-            <li class="list-item-inline">
+        <footer className="footer">
+          <div className="footer-header">SOCIAL MEDIA</div>
+          <ul className="link social-handles list-non-bullet">
+            <li className="list-item-inline">
               <a
-                class="link social-handles"
+                className="link social-handles"
                 href="https://github.com/zabihhaqqani"
                 target="_blank"
               >
                 GitHub
               </a>
             </li>
-            <li class="list-item-inline">
+            <li className="list-item-inline">
               <a
-                class="link social-handles"
+                className="link social-handles"
                 href="https://www.linkedin.com/in/zabih-haqqani-7ab187191/"
                 target="_blank"
               >
                 LinkedIn
               </a>
             </li>
-            <li class="list-item-inline">
+            <li className="list-item-inline">
               <a
-                class="link social-handles"
+                className="link social-handles"
                 href="https://twitter.com/zabih01"
                 target="_blank"
               >
